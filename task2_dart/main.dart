@@ -64,17 +64,22 @@ void main() {
       }
     }
 
-    print('large number is: $largeNum');
+    print('largest number is: $largeNum');
 
     //   // The smallest number entered.
 
-    //   int small = 0;
-    //   for (int i = 0; i < numbers.length; i++) {
-    //     if (numbers[i] < numbers[i + 1]) {
-    //       small = numbers[i];
-    //     }
-    //   }
-    //   print('Large number is: $large');
+    int smallNum = numbers[0];
+    print(smallNum);
+    print(numbers);
+    for (int item in numbers) {
+      print(item);
+      if (smallNum >= item) {
+        smallNum = item;
+        print('small number changed to $smallNum');
+      }
+    }
+
+    print('smallest number is: $smallNum');
 
     //   // 4. Print the results clearly.
   } //end of else
