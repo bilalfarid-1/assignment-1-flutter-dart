@@ -43,23 +43,28 @@ void main() {
     }
     print('Sum of Even Numbers: $evenNum');
     //   // The sum of odd numbers.
-    //   int oddNum = 0;
-    //   for (int num in numbers) {
-    //     if (num % 2 == 0) {
-    //       oddNum += num;
-    //     }
-    //     print('Sum of Odd Numbers: $oddNum');
-    //   }
+    int oddNum = 0;
+    for (int num in numbers) {
+      if (num % 2 != 0) {
+        print('even $num');
+        oddNum += num;
+      }
+    }
+    print('Sum of Odd Numbers: $oddNum');
 
-    //   // The largest number entered.
+    //The largest number entered.
 
-    //   int large = 0;
-    //   for (int i = 0; i < numbers.length; i++) {
-    //     if (numbers[i] > numbers[i + 1]) {
-    //       large = numbers[i];
-    //     }
-    //   }
-    //   print('Large number is: $large');
+    int largeNum = 0;
+    print(numbers);
+    for (int item in numbers) {
+      print(item);
+      if (largeNum < item) {
+        largeNum = item;
+        print('large number changed to $largeNum');
+      }
+    }
+
+    print('large number is: $largeNum');
 
     //   // The smallest number entered.
 
