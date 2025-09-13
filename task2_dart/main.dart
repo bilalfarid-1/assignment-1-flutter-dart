@@ -37,50 +37,41 @@ void main() {
     int evenNum = 0;
     for (int num in numbers) {
       if (num % 2 == 0) {
-        print('even $num');
         evenNum += num;
       }
     }
-    print('Sum of Even Numbers: $evenNum');
+
     //   // The sum of odd numbers.
     int oddNum = 0;
     for (int num in numbers) {
       if (num % 2 != 0) {
-        print('even $num');
         oddNum += num;
       }
     }
-    print('Sum of Odd Numbers: $oddNum');
 
     //The largest number entered.
 
     int largeNum = 0;
-    print(numbers);
     for (int item in numbers) {
-      print(item);
       if (largeNum < item) {
         largeNum = item;
-        print('large number changed to $largeNum');
       }
     }
 
-    print('largest number is: $largeNum');
-
-    //   // The smallest number entered.
+    // The smallest number entered.
 
     int smallNum = numbers[0];
-    print(smallNum);
-    print(numbers);
     for (int item in numbers) {
-      print(item);
       if (smallNum >= item) {
         smallNum = item;
-        print('small number changed to $smallNum');
       }
     }
 
-    print('smallest number is: $smallNum');
-
     //   // 4. Print the results clearly.
+
+    print('Sum of Even Numbers: $evenNum');
+    print('Sum of Odd Numbers: $oddNum');
+    print('largest number is: $largeNum');
+    print('small number changed to $smallNum');
   } //end of else
 } //end of main
