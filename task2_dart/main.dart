@@ -6,8 +6,9 @@ void main() {
   // 1. Takes input from the user for their name and age.
   print("Enter your name: ");
   String name = stdin.readLineSync()!;
-  print("Enter you age: ");
-  int age = int.parse(stdin.readLineSync()!);
+  // print("Enter you age: ");
+  int age = 20;
+  //int.parse(stdin.readLineSync()!);
   print('name: $name');
   print('age: $age');
 
@@ -26,32 +27,50 @@ void main() {
     // 3. Store all numbers in a list and calculate:
     List<int> numbers = [];
     for (int i = 0; i < count; i++) {
-      print('Enter $i+1 number: ');
+      print('Enter ($i+1) number: ');
       int userInput = int.parse(stdin.readLineSync()!);
       numbers.add(userInput);
     }
+    print(numbers);
 
     // The sum of even numbers.
     int evenNum = 0;
     for (int num in numbers) {
       if (num % 2 == 0) {
+        print('even $num');
         evenNum += num;
       }
-      print('Sum of Even Numbers: $evenNum');
     }
-    // The sum of odd numbers.
-    int oddNum = 0;
-    for (int num in numbers) {
-      if (num % 2 == 0) {
-        oddNum += num;
-      }
-      print('Sum of Odd Numbers: $oddNum');
-    }
+    print('Sum of Even Numbers: $evenNum');
+    //   // The sum of odd numbers.
+    //   int oddNum = 0;
+    //   for (int num in numbers) {
+    //     if (num % 2 == 0) {
+    //       oddNum += num;
+    //     }
+    //     print('Sum of Odd Numbers: $oddNum');
+    //   }
 
-    // The largest number entered.
+    //   // The largest number entered.
 
-    // The smallest number entered.
+    //   int large = 0;
+    //   for (int i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] > numbers[i + 1]) {
+    //       large = numbers[i];
+    //     }
+    //   }
+    //   print('Large number is: $large');
 
-    // 4. Print the results clearly.
+    //   // The smallest number entered.
+
+    //   int small = 0;
+    //   for (int i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] < numbers[i + 1]) {
+    //       small = numbers[i];
+    //     }
+    //   }
+    //   print('Large number is: $large');
+
+    //   // 4. Print the results clearly.
   } //end of else
 } //end of main
