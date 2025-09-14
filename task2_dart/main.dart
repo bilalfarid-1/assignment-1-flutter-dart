@@ -6,18 +6,13 @@ void main() {
   // 1. Takes input from the user for their name and age.
   print("Enter your name: ");
   String name = stdin.readLineSync()!;
-  // print("Enter you age: ");
-  int age = 20;
-  //int.parse(stdin.readLineSync()!);
-  print('name: $name');
-  print('age: $age');
+  print('Enter the value of age: ');
+  int age = int.parse(stdin.readLineSync()!);
 
-  // If the age is less than 18, print:
-  // "Sorry [Name], you are not eligible to register." and stop execution.
   if (age < 18) {
     print('Sorry $name, you are not eligible to register.');
+    return;
   } //end of if
-  // Otherwise, continue.
   else {
     print('How many numbers you wanna enter: ');
     int count = int.parse(stdin.readLineSync()!);
@@ -27,7 +22,7 @@ void main() {
     // 3. Store all numbers in a list and calculate:
     List<int> numbers = [];
     for (int i = 0; i < count; i++) {
-      print('Enter ($i+1) number: ');
+      print('Enter  number ${i + 1}: ');
       int userInput = int.parse(stdin.readLineSync()!);
       numbers.add(userInput);
     }
